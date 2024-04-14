@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "909414523665",
+    "project_id": "climagrow-a1200",
+    "storage_bucket": "climagrow-a1200.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:909414523665:android:43d625ddc757e84d45e2b0",
+        "android_client_info": {
+          "package_name": "com.example.climagrow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "909414523665-dv1ebikscf7efectslmbjgs6pb0ctpu2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBzGnHQfXDfkrQNvgvtnjrMWvMhn7RukU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "909414523665-dv1ebikscf7efectslmbjgs6pb0ctpu2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
