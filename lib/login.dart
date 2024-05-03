@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'navbar.dart';
+import 'package:connectivity/connectivity.dart';
 import 'sign_up.dart';
 
 class LoginPage extends StatefulWidget {
@@ -51,9 +52,40 @@ class _LoginState extends State<LoginPage> {
       _isLoading = true;
     });
 
+    var connectivityResult = await Connectivity().checkConnectivity();
+    if (connectivityResult == ConnectivityResult.none) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          backgroundColor: Colors.red,
+          content: Row(
+            children: [
+              Icon(
+                Icons.error_outline,
+                color: Colors.white,
+              ),
+              SizedBox(width: 10),
+              Text(
+                'No Internet Connection!',
+                style: TextStyle(color: Colors.white),
+              ),
+            ],
+          ),
+        ),
+      );
+      setState(() {
+        _isLoading = false;
+      });
+      return;
+    }
+
     try {
       if (_emailController.text.isEmpty || _passwordController.text.isEmpty) {
         throw 'Please fill out all fields';
+      }
+
+      if (!RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$')
+          .hasMatch(_emailController.text.trim())) {
+        throw 'This is not an Email, Try again.';
       }
 
       final UserCredential userCredential =
@@ -84,6 +116,32 @@ class _LoginState extends State<LoginPage> {
       _isLoading = true;
     });
 
+    var connectivityResult = await Connectivity().checkConnectivity();
+    if (connectivityResult == ConnectivityResult.none) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          backgroundColor: Colors.red,
+          content: Row(
+            children: [
+              Icon(
+                Icons.error_outline,
+                color: Colors.white,
+              ),
+              SizedBox(width: 10),
+              Text(
+                'No Internet Connection!',
+                style: TextStyle(color: Colors.white),
+              ),
+            ],
+          ),
+        ),
+      );
+      setState(() {
+        _isLoading = false;
+      });
+      return;
+    }
+
     try {
       await googleSignIn.signOut();
 
@@ -106,22 +164,11 @@ class _LoginState extends State<LoginPage> {
 
         if (user != null) {
           print('User ID: ${user.uid}');
-          // Check if the user exists in Firebase database
-          final User? firebaseUser = await _auth.currentUser;
-          if (firebaseUser == null) {
-            // If the user doesn't exist, show a message and navigate to the sign-up screen
-            _showErrorSnackBar('Google account doesn\'t exist, please sign up');
-            Navigator.pushReplacement(
-              context,
-              MaterialPageRoute(builder: (context) => const SignUpPage()),
-            );
-          } else {
-            // If the user exists, navigate to the home screen
-            Navigator.pushReplacement(
-              context,
-              MaterialPageRoute(builder: (context) => const NavBar()),
-            );
-          }
+          // Navigate to the home screen
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(builder: (context) => const NavBar()),
+          );
         }
       }
     } catch (error) {
@@ -138,6 +185,7 @@ class _LoginState extends State<LoginPage> {
     return Scaffold(
       appBar: AppBar(
           title: const Text('Login'),
+          backgroundColor: const Color.fromARGB(255, 56, 186, 106),
           titleTextStyle: const TextStyle(
               fontWeight: FontWeight.bold, color: Colors.black, fontSize: 30)),
       body: _isLoading
@@ -271,7 +319,7 @@ class _LoginState extends State<LoginPage> {
                         ),
                       ),
                     ),
-                    const SizedBox(height: 40.0),
+                    const SizedBox(height: 48),
                   ],
                 ),
               ),

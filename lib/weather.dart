@@ -25,10 +25,14 @@ class WeatherState extends State<Weather> {
           future: getweather(),
           builder: (context, snapshot) {
             if (!snapshot.hasData) {
-              return const Center(
+              return Container(
+                color: Colors.green[200],
+                child: const Center(
                   child: CircularProgressIndicator(
-                color: Colors.green,
-              ));
+                    color: Colors.green,
+                  ),
+                ),
+              );
             } else {
               return SingleChildScrollView(
                 child: Container(

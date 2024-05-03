@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 import 'about_us.dart';
 import 'helper.dart';
-import 'tips.dart';
+import 'classifiedCrops.dart';
 import 'weather.dart';
 import 'logout.dart';
 
@@ -21,7 +21,7 @@ class NavBarState extends State<NavBar> {
     const LogoutDialog(),
     const Weather(),
     const Helper(),
-    const Tips(),
+    const ClassifiedList(),
     const AboutUs()
   ];
 
@@ -59,11 +59,11 @@ class NavBarState extends State<NavBar> {
                         heightFactor: 0.6,
                         child: FloatingActionButton(
                           backgroundColor: Colors.redAccent,
-                          child: const Icon(FontAwesomeIcons.gitlab),
                           elevation: 0.1,
                           onPressed: () {
                             _setBottomBarIndex(2);
                           },
+                          child: const Icon(FontAwesomeIcons.gitlab),
                         ),
                       ),
                       const SizedBox(
@@ -91,7 +91,7 @@ class NavBarState extends State<NavBar> {
                             'Logout',
                             'Weather',
                             'Recommend Crop',
-                            'Tips',
+                            'History',
                             'Contact'
                           ];
                           return Column(
