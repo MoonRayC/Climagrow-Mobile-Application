@@ -14,7 +14,7 @@ ClimaGrow is a machine learning-powered crop recommendation system designed to a
 - 🔄 **Result History**: Save and revisit your previous recommendations
 
 ## Screenshots 📱
-(https://raw.githubusercontent.com/MoonRayC/Climagrow-Mobile-Application/refs/heads/master/public/screenshot/Screenshot1.jpg),
+![Login Screen](public/screenshot/screenshot1.jpg),
 ![Login Screen](public/screenshot/screenshot2.jpg),
 ![Recommendation Result](public/screenshot/screenshot3.jpg),
 ![History with Location](public/screenshot/screenshot4.jpg),
