@@ -33,12 +33,16 @@ ClimaGrow is a machine learning-powered crop recommendation system designed to a
 
 ### Steps to Run the App
   1. **Clone the repository:**
+     
     git clone https://github.com/your-username/climagrow.git
-  2. **Navigate to the project directory:**
+  3. **Navigate to the project directory:**
+     
     cd climagrow
-  3. **Install dependencies:**
+  5. **Install dependencies:**
+     
     flutter pub get
-  4. **Run the app:**
+  7. **Run the app:**
+     
     flutter run
 
 ### Building the APK
