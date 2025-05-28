@@ -1,0 +1,95 @@
+{
+  "name": "ClimaGrow",
+  "short_name": "ClimaGrow",
+  "description": "Machine learning-powered crop recommendation system for farmers",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#2e7d32",
+  "background_color": "#f5f5f5",
+  "icons": [
+    {
+      "src": "public/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "public/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "public/apple-touch-icon.png",
+      "sizes": "125x125",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "public/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "public/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "public/screenshot/screenshot1.jpg",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "description": "ClimaGrow home screen with recommendation button"
+    },
+    {
+      "src": "public/screenshot/screenshot2.jpg",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "description": "Crop recommendation results screen"
+    }
+  ],
+  "categories": ["agriculture", "productivity", "education"],
+  "lang": "en-US",
+  "dir": "ltr",
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.example.climagrow",
+      "id": "com.example.climagrow"
+    }
+  ],
+  "prefer_related_applications": false,
+  "shortcuts": [
+    {
+      "name": "New Recommendation",
+      "short_name": "Recommend",
+      "description": "Get a new crop recommendation",
+      "url": "/recommend",
+      "icons": [
+        {
+          "src": "icons/shortcut-96x96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "View History",
+      "short_name": "History",
+      "description": "View your recommendation history",
+      "url": "/history",
+      "icons": [
+        {
+          "src": "icons/shortcut-history-96x96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    }
+  ]
+}

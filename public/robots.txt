@@ -1,0 +1,36 @@
+# ClimaGrow - robots.txt
+User-agent: *
+Allow: /$
+Allow: /index.html
+Allow: /public/
+Allow: /docs/
+Disallow: /admin/
+Disallow: /api/
+Disallow: /private/
+Disallow: /config/
+Disallow: /node_modules/
+Disallow: /vendor/
+Disallow: /storage/
+Disallow: /\.env
+Disallow: /*.json$
+Disallow: /*.lock$
+Disallow: /*.sql$
+Disallow: /*.log$
+
+# Sitemap location
+Sitemap: https://yourdomain.com/sitemap.xml
+
+# Crawl-delay for heavy pages (optional)
+Crawl-delay: 5
+
+# Special rules for search engines
+User-agent: Googlebot
+Allow: /public/images/
+Allow: /public/screenshots/
+
+User-agent: Bingbot
+Allow: /public/images/
+Disallow: /public/temp/
+
+User-agent: Yandex
+Disallow: /public/downloads/

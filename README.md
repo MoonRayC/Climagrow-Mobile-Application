@@ -16,11 +16,15 @@ ClimaGrow is a machine learning-powered crop recommendation system designed to a
 ## Screenshots 📱
 
 <div align="center">
-  <img src="public/screenshot1.png" alt="Icon Button" width="200"/>
-  <img src="public/screenshot2.png" alt="Login Screen" width="200"/>
-  <img src="public/screenshot3.png" alt="Recommendation Result" width="200"/>
-  <img src="public/screenshot4.png" alt="History with Location" width="200"/>
-  <img src="public/screenshot5.png" alt="Home Screen" width="200"/>
+  <img src="public/screenshot/screenshot1.jpg" alt="Icon Button" width="200"/>
+  <img src="public/screenshot/screenshot2.jpg" alt="Login Screen" width="200"/>
+  <img src="public/screenshot/screenshot3.jpg" alt="Recommendation Result" width="200"/>
+  <img src="public/screenshot/screenshot4.jpg" alt="History with Location" width="200"/>
+  <img src="public/screenshot/screenshot5.jpg" alt="Home Screen" width="200"/>
+  <img src="public/screenshot/screenshot6.jpg" alt="Contact Screen" width="200"/>
+  <img src="public/screenshot/screenshot7.jpg" alt="Logout Screen" width="200"/>
+  <img src="public/screenshot/screenshot8.jpg" alt="Register Screen" width="200"/>
+
 </div>
 
 ## Installation 🛠️
@@ -76,8 +80,10 @@ Maps	Google Maps API
 # Author:Raymond Chavez
 # Porfolio: https://rdcbits.vercel.app/
 
- ________  ______  _________    __   __   
-|__  ___ \/ ____ \/ _____/ /_  /_/__/ /_______
-  / /__/ / /   / / /    / __ \__ /_  __/ ____/
- / ___  / /___/ / /____/ /_/ / /  / / (___  )
-/_/  /_/_______/______/_____/_/  /_/ /_____/
+     ________  ______  _________    __   __   
+    |__  ___ \/ ____ \/ _____/ /_  /_/__/ /_______
+      / /__/ / /   / / /    / __ \__ /_  __/ ____/
+     / ___  / /___/ / /____/ /_/ / /  / / (___  )
+    /_/  /_/_______/______/_____/_/  /_/ /_____/
+
+### RDCbits
