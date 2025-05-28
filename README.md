@@ -14,18 +14,14 @@ ClimaGrow is a machine learning-powered crop recommendation system designed to a
 - 🔄 **Result History**: Save and revisit your previous recommendations
 
 ## Screenshots 📱
-
-<div align="center">
-  <img src="public/screenshot/screenshot1.jpg" alt="Icon Button" width="200"/>
-  <img src="public/screenshot/screenshot2.jpg" alt="Login Screen" width="200"/>
-  <img src="public/screenshot/screenshot3.jpg" alt="Recommendation Result" width="200"/>
-  <img src="public/screenshot/screenshot4.jpg" alt="History with Location" width="200"/>
-  <img src="public/screenshot/screenshot5.jpg" alt="Home Screen" width="200"/>
-  <img src="public/screenshot/screenshot6.jpg" alt="Contact Screen" width="200"/>
-  <img src="public/screenshot/screenshot7.jpg" alt="Logout Screen" width="200"/>
-  <img src="public/screenshot/screenshot8.jpg" alt="Register Screen" width="200"/>
-
-</div>
+![Icon Button](public/screenshot/screenshot1.jpg),
+![Login Screen](public/screenshot/screenshot2.jpg),
+![Recommendation Result](public/screenshot/screenshot3.jpg),
+![History with Location](public/screenshot/screenshot4.jpg),
+![Home Screen](public/screenshot/screenshot5.jpg),
+![Info Screen](public/screenshot/screenshot6.jpg),
+![Logout Screen](public/screenshot/screenshot7.jpg),
+![Register Screen](public/screenshot/screenshot8.jpg),
 
 ## Installation 🛠️
 
