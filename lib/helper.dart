@@ -365,7 +365,7 @@ class HelperState extends State<Helper> {
                           isTopographyProcessing = false;
                         });
                       },
-                child: Text('Done'),
+                child: const Text('Done'),
               ),
             ),
           ),
